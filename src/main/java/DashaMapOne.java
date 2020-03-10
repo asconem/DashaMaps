@@ -15,7 +15,7 @@ public class DashaMapOne implements HashMapX {
     }
 
     public Integer returnIndex(String input) {
-        
+        return null;
     }
 
     public void set(String key, String value) {
