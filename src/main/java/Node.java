@@ -1,16 +1,32 @@
 public class Node {
-    private String key;
-    private Integer value;
-    private Node next;
+    String key;
+    Integer value;
+    Node next;
 
     public Node(String key, Integer value) {
         this.key = key;
         this.value = value;
+        this.next = null;
     }
 
-    public void setNext(Node next) {
-        this.next = next;
+    public boolean hasNext() {
+        return this.next != null;
     }
 
+    public Node getNext() {
+        return this.next;
+    }
 
+    public void setNext(Node nextNode) {
+        this.next = nextNode;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public String getKey() {
+        return key;
+    }
 }
+
